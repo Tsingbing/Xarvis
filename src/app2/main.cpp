@@ -5,16 +5,17 @@
 
 using namespace std;
 
-int main() 
+int main()
 {
-  std::ifstream file("config.toml");
-  std::string content((std::istreambuf_iterator<char>(file)),
-                      (std::istreambuf_iterator<char>()));
-  std::cout << content << std::endl;
+    std::string filename = "para/config.toml";
 
-  // auto toml = toml::parse("config.toml");
-  // std::cout << "Application directory path: " << std::filesystem::current_path() << '\n';
-  
-  // cout << "Hello World!" << endl;
-  return 0;
+    if (std::filesystem::exists("para/config.toml")) {
+        std::cout << "File exists." << std::endl;
+    } else {
+        std::cout << "File does not exist." << std::endl;
+        std::exit(EXIT_FAILURE);
+    }
+    auto toml = toml::parse("config.toml");
+
+    return 0;
 }
