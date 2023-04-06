@@ -43,11 +43,11 @@ set(CMAKE_AUTOUIC ON)
 #  set(IMPLICIT_DEPENDS Qt5::Test)
 #endif()
 
-find_package(Qt5
-  COMPONENTS Concurrent Core Gui Network PrintSupport Qml Quick
-    QuickWidgets Sql Widgets Xml
-  REQUIRED
-)
+# find_package(Qt5
+#   COMPONENTS Concurrent Core Gui Network PrintSupport Qml Quick
+#     QuickWidgets Sql Widgets Xml
+#   REQUIRED
+# )
 
 #find_package(Qt5 COMPONENTS LinguistTools)
 
