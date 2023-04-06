@@ -45,7 +45,7 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt5
   COMPONENTS Concurrent Core Gui Network PrintSupport Qml Quick
-    QuickWidgets Sql Widgets Xml ${QT_TEST_COMPONENT}
+    QuickWidgets Sql Widgets Xml
   REQUIRED
 )
 

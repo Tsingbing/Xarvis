@@ -17,7 +17,5 @@ int main()
     }
     auto toml = toml::parse("para/config.toml");
 
-    
-
     return 0;
 }
