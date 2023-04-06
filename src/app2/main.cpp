@@ -15,7 +15,9 @@ int main()
         std::cout << "File does not exist." << std::endl;
         std::exit(EXIT_FAILURE);
     }
-    auto toml = toml::parse("config.toml");
+    auto toml = toml::parse("para/config.toml");
+
+    
 
     return 0;
 }

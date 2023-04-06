@@ -34,20 +34,20 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # Set up Qt stuff:
-#set(CMAKE_AUTOMOC ON)
-#set(CMAKE_AUTORCC ON)
-#set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
 #if (WITH_TESTS)
 #  set(QT_TEST_COMPONENT Test)
 #  set(IMPLICIT_DEPENDS Qt5::Test)
 #endif()
 
-#find_package(Qt5
-#  COMPONENTS Concurrent Core Gui Network PrintSupport Qml Quick
-#    QuickWidgets Sql Widgets Xml ${QT_TEST_COMPONENT}
-#  REQUIRED
-#)
+find_package(Qt5
+  COMPONENTS Concurrent Core Gui Network PrintSupport Qml Quick
+    QuickWidgets Sql Widgets Xml ${QT_TEST_COMPONENT}
+  REQUIRED
+)
 
 #find_package(Qt5 COMPONENTS LinguistTools)
 

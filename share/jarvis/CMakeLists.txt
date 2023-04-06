@@ -11,7 +11,7 @@ add_custom_target(copy_share_to_builddir ALL
 foreach(dir IN ITEMS ${resource_directories})
   add_custom_command(TARGET copy_share_to_builddir POST_BUILD
     COMMAND "${CMAKE_COMMAND}" -E copy_directory "${dir}"
-      "${PROJECT_BINARY_DIR}/${dir}"
+      "${PROJECT_BINARY_DIR}/${IDE_DATA_PATH}/${dir}"
     WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
     COMMENT Copy resource directories into build directory
     VERBATIM

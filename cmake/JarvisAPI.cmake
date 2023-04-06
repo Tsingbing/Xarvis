@@ -115,13 +115,13 @@ else()
   set(_PLUGIN_RPATH "\$ORIGIN;\$ORIGIN/${_PLUGIN_TO_LIB};\$ORIGIN/${_PLUGIN_TO_QT}")
 endif ()
 
-set(__QTC_PLUGINS "" CACHE INTERNAL "*** Internal ***")
-set(__QTC_INSTALLED_PLUGINS "" CACHE INTERNAL "*** Internal ***")
-set(__QTC_LIBRARIES "" CACHE INTERNAL "*** Internal ***")
-set(__QTC_INSTALLED_LIBRARIES "" CACHE INTERNAL "*** Internal ***")
-set(__QTC_EXECUTABLES "" CACHE INTERNAL "*** Internal ***")
-set(__QTC_INSTALLED_EXECUTABLES "" CACHE INTERNAL "*** Internal ***")
-set(__QTC_TESTS "" CACHE INTERNAL "*** Internal ***")
+# set(__QTC_PLUGINS "" CACHE INTERNAL "*** Internal ***")
+# set(__QTC_INSTALLED_PLUGINS "" CACHE INTERNAL "*** Internal ***")
+# set(__QTC_LIBRARIES "" CACHE INTERNAL "*** Internal ***")
+# set(__QTC_INSTALLED_LIBRARIES "" CACHE INTERNAL "*** Internal ***")
+ set(__QTC_EXECUTABLES "" CACHE INTERNAL "*** Internal ***")
+ set(__QTC_INSTALLED_EXECUTABLES "" CACHE INTERNAL "*** Internal ***")
+# set(__QTC_TESTS "" CACHE INTERNAL "*** Internal ***")
 
 #
 # Internal functions
