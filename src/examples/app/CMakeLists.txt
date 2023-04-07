@@ -1,10 +1,5 @@
 ﻿
-set(CMAKE_OSX_ARCHITECTURES x86_64)
-if (APPLE)
-    set(QT5_DIR ~/Qt/5.15.2/clang_64)
-elseif (WIN32)
-    set(QT5_DIR c:/Qt/6.4.0/mingw_64)
-endif()
+include(QtDir)
 
 set(CMAKE_PREFIX_PATH ${QT5_DIR})
 
